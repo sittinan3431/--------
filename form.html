@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+          
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html>
+        <head>
+          <link rel="shortcut icon" href="img/มหาวิทยาลัยแม่โจ้_edit.png" >
+    </html>
+    <title>แบบคำร้องขอลาพักการศึกษา</title>
+    <ul>
+   
+</head>
+
+<body>
+    
+ <div align = 'center'>
+
+   
+    <section class="section">
+        <div class="container">
+          <h1 class="title">
+            <img
+              src="img/มหาวิทยาลัยแม่โจ้_edit.png"
+              alt="alternatetext" style="width:80px;height:80px;">
+            <p align="center">คําร้องขอลาพักการศึกษา</p>
+          </h1>
+          <p class="subtitle">
+          <p align="center">(สําหรับนักศึกษาที่ได้ศึกษามาแล้วไม่น้อยกว่าหนึ่งภาคการศึกษา)</p>
+          </p><label for="start">เขียนที่ มหาวิทยาลัยแม่โจ้ <br>  วัน/เดือน/ปีที่กรอก:</label>
+          <input type="date" id="start" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31">
+          <p> <b>เรื่อง</b> ขอลาพักการศึกษา &nbsp;ในภาคเรียน
+            <label class="radio"></label>
+            <input type="radio" name="answer">
+            1
+            </label>
+            <label class="radio">
+              <input type="radio" name="answer">
+              2
+            </label>
+            <input type="number" placeholder="ปีการศึกษา" maxlength="4" > 
+          </p>
+       
+          <p><b>เรียน</b> คณะบดีคณะ
+      
+            <select>
+              <option value="---เลือกคณะ---">---เลือกคณะ---</option>
+              <option value="คณะผลิตกรรมการเกษตร">คณะผลิตกรรมการเกษตร</option>
+              <option value="คณะสัตวศาสตร์และเทคโนโลยี">คณะสัตวศาสตร์และเทคโนโลยี</option>
+              <option value="คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม">คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม</option>
+              <option value="คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+              <option value="คณะบริหารธุรกิจ">คณะบริหารธุรกิจ</option>
+              <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+              <option value="คณะสารสนเทศและการสื่อสาร">คณะสารสนเทศและการสื่อสาร</option>
+              <option value="คณะวิศวกรรมและอุตสาหกรรมเกษตร">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+              <option value="คณะวิทยาศาสตร์">คณะวิทยาศาสตร์</option>
+              <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+              <option value="คณะพัฒนาการท่องเที่ยว">คณะพัฒนาการท่องเที่ยว</option>
+              <option value="วิทยาลัยบริหารศาสตร์">วิทยาลัยบริหารศาสตร์</option>
+              <option value="วิทยาลัยพลังงานทดแทน">พลังงานทดแทน</option>
+              <option value="แม่โจ้-แพร่ เฉลิมพระเกียรติ">แม่โจ้-แพร่ เฉลิมพระเกียรติ </option>
+              <option value="แม่โจ้-ชุมพร">แม่โจ้-ชุมพร</option>
+            </select>
+    
+            </p>
+            <p> ข้าพเจ้า <label class="radio"></label>
+              <input type="radio" name="answer">
+              นาย
+              </label>
+              <label class="radio">
+                <input type="radio" name="answer">
+                นาง
+              </label>
+              <label class="radio">
+                <input type="radio" name="answer">
+                นางสาว
+              </label>
+              ชื่อ-นามสกุล
+             <input placeholder="ชื่อ" type="text" name="fname" id="fname" onKeyUp="if(!(isNaN(this.value))){ alert('เขียนตัวเลขไม่ได้'); this.value='';}" pattern="[A-Za-z]{1,50}" required>
+          
+            <p>
+              รหัสนักศึกษา (10หลัก) <input type="text" maxlength="10" name="text_plain"
+                onKeyUp="if(isNaN(this.value)){ alert('ปีการศึกษาพ่อมึงเขียนตัวอักษรได้'); this.value='';}" />
+              โทรศัพท์มือถือ (10หลัก) <input type="text" maxlength="10" name="text_plain"
+                onKeyUp="if(isNaN(this.value)){ alert('ปีการศึกษาพ่อมึงเขียนตัวอักษรได้'); this.value='';}" /> </p>
+            </p>
+            <p>
+              โปรดระบุระดับการศึกษา หลักสูตรปริญญาตรี <label class="radio"></label>
+              <input type="radio" name="answer">
+              4 – 5 ปี
+              </label>
+              <label class="radio">
+                <input type="radio" name="answer">
+                4 ปีเทียบเข้าเรียน (2ปี)
+              </label>
+              <label class="radio">
+                <input type="radio" name="answer">
+                ภาคปกติ
+              </label>
+              </label>
+              <label class="radio">
+                <input type="radio" name="answer">
+                ภาคสมทบ
+              </label>
+               <p> คณะ 
+                <select>
+                  <option value="---เลือกคณะ---">---เลือกคณะ---</option>
+                  <option value="คณะผลิตกรรมการเกษตร">คณะผลิตกรรมการเกษตร</option>
+                  <option value="คณะสัตวศาสตร์และเทคโนโลยี">คณะสัตวศาสตร์และเทคโนโลยี</option>
+                  <option value="คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม">คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม</option>
+                  <option value="คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+                  <option value="คณะบริหารธุรกิจ">คณะบริหารธุรกิจ</option>
+                  <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+                  <option value="คณะสารสนเทศและการสื่อสาร">คณะสารสนเทศและการสื่อสาร</option>
+                  <option value="คณะวิศวกรรมและอุตสาหกรรมเกษตร">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+                  <option value="คณะวิทยาศาสตร์">คณะวิทยาศาสตร์</option>
+                  <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+                  <option value="คณะพัฒนาการท่องเที่ยว">คณะพัฒนาการท่องเที่ยว</option>
+                  <option value="วิทยาลัยบริหารศาสตร์">วิทยาลัยบริหารศาสตร์</option>
+                  <option value="วิทยาลัยพลังงานทดแทน">พลังงานทดแทน</option>
+                  <option value="แม่โจ้-แพร่ เฉลิมพระเกียรติ">แม่โจ้-แพร่ เฉลิมพระเกียรติ </option>
+                  <option value="แม่โจ้-ชุมพร">แม่โจ้-ชุมพร</option>
+                </select>
+    
+                สาขา
+                <input type="text"/> 
+               </p>
+              
+            </p>
+            <h4> มีความประสงค์จะขอลาพักการศึกษา เนื่องจาก <label class="radio"></label><input type="text" name="fname" id="fname" required></h4><br>
+            <tp >
+            <h2><b>พร้อมนี้ได้แนบใบยินยอมขอลาพักการศึกษาจากผู้ปกครอง / ใบรับรองแพทย์ / เอกสารอื่นๆ </b></h2>
+            <h2><b>จึงเรียนมาเพื่อโปรดพิจารณา</b></h2><br>
+            <h3><b>ขอแสดงความนับถือ <label class="radio"></label><input placeholder="ลงชื่อ" type="text" name="fname" id="fname" onKeyUp="if(!(isNaN(this.value))){ alert('เขียนตัวเลขไม่ได้'); this.value='';}" pattern="[A-Za-z]{1,50}" required>  (นักศึกษา)</b></h3>
+            <h3>(2) ความเห็นหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ</h3>
+            <input type="radio" name="answer">ทราบ นักศึกษาดังกล่าวสามารถลาพักการศึกษาได</label><br>
+            <input type="radio" name="answer"> ภาคเรียนที่ 1 </label><input type="radio" name="answer"> ภาคเรียนที่ 2 </label>
+            <h3><label class="radio"></label><input placeholder="ลงชื่อ" type="text" name="fname1" id="fname1" onKeyUp="if(!(isNaN(this.value))){ alert('เขียนตัวเลขไม่ได้'); this.value='';}" required><br>หัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ </h3>
+            <label for="start">วัน/เดือน/ปีที่กรอก:</label>
+            <input type="date" id="start" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31">
+            </tp>
+            <p></p>
+            <br>
+            <tp >
+            <p> <h3>(3) ความเห็นผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ</h3>
+            <input type="radio" name="answer">ทราบ นักศึกษาดังกล่าวสามารถลาพักการศึกษาได้</label><br>
+            
+            <h3><label class="radio"></label><input placeholder="ลงชื่อ" type="text" name="fname2" id="fname2" onKeyUp="if(!(isNaN(this.value))){ alert('เขียนตัวเลขไม่ได้'); this.value='';}" required><br>ผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ </h3>
+            <label for="start">วัน/เดือน/ปีที่กรอก:</label>
+            <input type="date" id="start" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31">
+            </tp>
+            <p></p>
+            <br>
+            <tp>
+            <p> <h3>(4) ความเห็นอาจารย์ที่ปรึกษา</h3>
+            <input type="radio" name="answer">ทราบ นักศึกษาดังกล่าวสามารถลาพักการศึกษาได้</label><br>
+            
+            <h3><label class="radio"></label><input placeholder="ลงชื่อ" type="text" name="fname3" id="fname3" onKeyUp="if(!(isNaN(this.value))){ alert('เขียนตัวเลขไม่ได้'); this.value='';}" required><br></h3>
+            <label for="start">วัน/เดือน/ปีที่กรอก:</label>
+            <input type="date" id="start" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31">
+            </tp>
+            <p></p>
+            <br>
+            <tp>
+            <p> <h3>(5) ความเห็นประธานคณะกรรมการประจําหลักสูตร</h3>
+            <input type="radio" name="answer">ทราบ นักศึกษาดังกล่าวสามารถลาพักการศึกษาได้</label><br>
+           
+            <h3><label class="radio"></label><input placeholder="ลงชื่อ" type="text" name="fname4" id="fname4" onKeyUp="if(!(isNaN(this.value))){ alert('เขียนตัวเลขไม่ได้'); this.value='';}" required><br></h3>
+            <label for="start">วัน/เดือน/ปีที่กรอก:</label>
+            <input type="date" id="start" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31">
+            </tp>
+            <p></p>
+            <br>
+            <p> <h3>(6) ความเห็นคณะบดี</h3>
+              <input type="radio" name="answer">อนุมัติ</label> <input type="radio" name="answer">ไม่อนุมัติ</label><br>
+              
+              <h3><label class="radio"></label><input placeholder="ลงชื่อ" type="text" name="fname3" id="fname3" onKeyUp="if(!(isNaN(this.value))){ alert('เขียนตัวเลขไม่ได้'); this.value='';}" required><br></h3>
+              <label for="start">วัน/เดือน/ปีที่กรอก:</label>
+              <input type="date" id="start" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31">
+              </tp>
+              <p></p>
+              <br>
+              <p> <h3>(7) งานเงินรายได้ กองคลัง ชั้น 2 อาคารอิงคศรีกสิการ
+                ได้รับชําระเงินจํานวน </h3>
+                <input type="radio" name="answer">ภาคเรียนที่ 1 ราคา 1,200 บาท </label><input type="radio" name="answer">ภาคเรียนที่ 2 ราคา 1,000 บาท </label><br>
+                
+                <h3><label class="radio"></label><input placeholder="ลงชื่อ" type="text" name="fname3" id="fname3" onKeyUp="if(!(isNaN(this.value))){ alert('เขียนตัวเลขไม่ได้'); this.value='';}" required>ผู้รับเงิน</h3>
+                <label for="start">วัน/เดือน/ปีที่กรอก:</label>
+                <input type="date" id="start" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31">
+                </tp>
+                <p></p>
+                <br>
+                <p> <h3><b>(8) ส่งเอกสารคําร้องขอลาพักการศึกษาตัวจริง</b><br>
+                  ให้กลุ่มภารกิจ
+                  ทะเบียนฯ ชั้น 2 อาคารอํานวย ยศสุข เพื่อบันทึกคําร้องขอลาพัก
+                  การศึกษา<br> และให้นักศึกษาเก็บหลักฐานใบเสร็จที่ชําระเงินไว้
+                  เพื่อตรวจสอบการบันทึกการลาพักการศึกษา</h3>
+                 
+                  </tp>
+                  <p></p>
+                  <br>
+                  <p> <h3>(9) สําหรับเจ้าหน้าที่บันทึกลงฐานข้อมูล ได้บันทึกการข้อมูล
+                    ดังกล่าว </h3>
+                    <label for="start">วัน/เดือน/ปีที่กรอก:</label>
+                    <input type="date" id="start" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31">
+                    
+                    <h3><label class="radio"></label><input placeholder="ลงชื่อ" type="text" name="fname3" id="fname3" onKeyUp="if(!(isNaN(this.value))){ alert('เขียนตัวเลขไม่ได้'); this.value='';}" required><br> </h3>
+                    <label for="start">วัน/เดือน/ปีที่กรอก:</label>
+                    <input type="date" id="start" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31">
+                    </tp>
+                    <p></p>
+                    <br>
+                    <h1 >
+                     <b><p >คํารับรองของผู้ปกครอง</p></b> 
+                    </h1>
+                    
+                    <p for="start"> บ้านเลขที่ <input  type="text" name="fname" id="fname" required> หมู่ที่ <input type="text" name="fname" id="fname" required>ตําบล<input  type="text" name="fname" id="fname" required>
+                    </p>
+                    <p>อำเภอ <input  type="text" name="fname" id="fname" required>
+                      จังหวัด
+                      <select>
+                        <option value="---เลือกคณะ---">---เลือกจังหวัด---</option>
+                        <option value="จังหวัดเชียงราย ">จังหวัดเชียงราย </option>
+                        <option value="จังหวัดเชียงใหม่ ">จังหวัดเชียงใหม่ </option>
+                        <option value="จังหวัดน่าน ">จังหวัดน่าน </option>
+                        <option value="จังหวัดพะเยา ">จังหวัดพะเยา </option>
+                        <option value="จังหวัดแพร่ ">จังหวัดแพร่ </option>
+                        <option value="จังหวัดแม่ฮ่องสอน ">จังหวัดแม่ฮ่องสอน </option>
+                        <option value="จังหวัดลำปาง ">จังหวัดลำปาง </option>
+                        <option value="จังหวัดลำพูน ">จังหวัดลำพูน </option>
+                        <option value="จังหวัดอุตรดิตถ์">จังหวัดอุตรดิตถ์</option>
+                        <option value="จังหวัดกาฬสินธุ์ ">จังหวัดกาฬสินธุ์ </option>
+                        <option value="จังหวัดขอนแก่น ">จังหวัดขอนแก่น </option>
+                        <option value="จังหวัดชัยภูมิ ">จังหวัดชัยภูมิ </option>
+                        <option value="จังหวัดนครพนม ">จังหวัดนครพนม </option>
+                        <option value="จังหวัดนครราชสีมา ">จังหวัดนครราชสีมา </option>
+                        <option value="จังหวัดบึงกาฬ ">จังหวัดบึงกาฬ </option>
+                        <option value="จังหวัดบุรีรัมย์ ">จังหวัดบุรีรัมย์ </option>
+                        <option value="จังหวัดมหาสารคาม ">จังหวัดมหาสารคาม </option>
+                        <option value="จังหวัดมุกดาหาร ">จังหวัดมุกดาหาร </option>
+                        <option value="จังหวัดยโสธร ">จังหวัดยโสธร </option>
+                        <option value="จังหวัดร้อยเอ็ด ">จังหวัดร้อยเอ็ด </option>
+                        <option value="จังหวัดเลย ">จังหวัดเลย </option>
+                        <option value="จังหวัดสกลนคร ">จังหวัดสกลนคร </option>
+                        <option value="จังหวัดสุรินทร์ ">จังหวัดสุรินทร์ </option>
+                        <option value="จังหวัดศรีสะเกษ ">จังหวัดศรีสะเกษ </option>
+                        <option value="จังหวัดหนองคาย ">จังหวัดหนองคาย </option>
+                        <option value="จังหวัดหนองบัวลำภู ">จังหวัดหนองบัวลำภู </option>
+                        <option value="จังหวัดอุดรธานี ">จังหวัดอุดรธานี </option>
+                        <option value="จังหวัดอุบลราชธานี ">จังหวัดอุบลราชธานี </option>
+                        <option value="จังหวัดอำนาจเจริญ ">จังหวัดอำนาจเจริญ </option>
+                        <option value="จังหวัดกำแพงเพชร ">จังหวัดกำแพงเพชร </option>
+                        <option value="จังหวัดชัยนาท">จังหวัดชัยนาท</option>
+                        <option value="จังหวัดนครนายก ">จังหวัดนครนายก </option>
+                        <option value="จังหวัดนครปฐม ">จังหวัดนครปฐม </option>
+                        <option value="จังหวัดนครสวรรค์ ">จังหวัดนครสวรรค์ </option>
+                        <option value="จังหวัดนนทบุรี ">จังหวัดนนทบุรี </option>
+                        <option value="จังหวัดปทุมธานี ">จังหวัดปทุมธานี </option>
+                        <option value="จังหวัดพระนครศรีอยุธยา ">จังหวัดพระนครศรีอยุธยา </option>
+                        <option value="จังหวัดพิจิตร ">จังหวัดพิจิตร </option>
+                        <option value="จังหวัดพิษณุโลก ">จังหวัดพิษณุโลก </option>
+                        <option value="จังหวัดเพชรบูรณ์ ">จังหวัดเพชรบูรณ์ </option>
+                        <option value="จังหวัดลพบุรี ">จังหวัดลพบุรี </option>
+                        <option value="จังหวัดสมุทรปราการ ">จังหวัดสมุทรปราการ </option>
+                        <option value="จังหวัดสมุทรสงคราม ">จังหวัดสมุทรสงคราม </option>
+                        <option value="จังหวัดสมุทรสาคร ">จังหวัดสมุทรสาคร </option>
+                        <option value="จังหวัดสิงห์บุรี ">จังหวัดสิงห์บุรี </option>
+                        <option value="จังหวัดสุโขทัย ">จังหวัดสุโขทัย </option>
+                        <option value="จังหวัดสุพรรณบุรี ">จังหวัดสุพรรณบุรี </option>
+                        <option value="จังหวัดสระบุรี ">จังหวัดสระบุรี </option>
+                        <option value="จังหวัดอ่างทอง ">จังหวัดอ่างทอง </option>
+                        <option value="จังหวัดอุทัยธานี ">จังหวัดอุทัยธานี </option>
+                        <option value="จังหวัดจันทบุรี ">จังหวัดจันทบุรี </option>
+                        <option value="จังหวัดฉะเชิงเทรา">จังหวัดฉะเชิงเทรา</option>
+                        <option value="จังหวัดชลบุรี ">จังหวัดชลบุรี </option>
+                        <option value="จังหวัดตราด ">จังหวัดตราด </option>
+                        <option value="จังหวัดปราจีนบุรี ">จังหวัดปราจีนบุรี </option>
+                        <option value="จังหวัดระยอง ">จังหวัดระยอง </option>
+                        <option value="จังหวัดสระแก้ว">จังหวัดสระแก้ว</option>
+                        <option value="จังหวัดกาญจนบุรี ">จังหวัดกาญจนบุรี </option>
+                        <option value="จังหวัดตาก ">จังหวัดตาก </option>
+                        <option value="จังหวัดประจวบคีรีขันธ์ ">จังหวัดประจวบคีรีขันธ์ </option>
+                        <option value="จังหวัดเพชรบุรี ">จังหวัดเพชรบุรี </option>
+                        <option value="จังหวัดราชบุรี ">จังหวัดราชบุรี </option>
+                        <option value="จังหวัดกระบี่ ">จังหวัดกระบี่ </option>
+                        <option value="จังหวัดชุมพร ">จังหวัดชุมพร </option>
+                        <option value="จังหวัดตรัง ">จังหวัดตรัง </option>
+                        <option value="จังหวัดนครศรีธรรมราช ">จังหวัดนครศรีธรรมราช </option>
+                        <option value="จังหวัดนราธิวาส ">จังหวัดนราธิวาส </option>
+                        <option value="จังหวัดปัตตานี ">จังหวัดปัตตานี </option>
+                        <option value="จังหวัดพังงา ">จังหวัดพังงา </option>
+                        <option value="จังหวัดพัทลุง ">จังหวัดพัทลุง </option>
+                        <option value="จังหวัดภูเก็ต ">จังหวัดภูเก็ต </option>
+                        <option value="จังหวัดระนอง ">จังหวัดระนอง </option>
+                        <option value="จังหวัดสตูล ">จังหวัดสตูล </option>
+                        <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                        <option value="จังหวัดสงขลา ">จังหวัดสงขลา </option>
+                        <option value="จังหวัดสุราษฎร์ธานี ">จังหวัดสุราษฎร์ธานี </option>
+                        <option value="จังหวัดยะลา ">จังหวัดยะลา </option>
+                      </select></p>
+                      <p for="start">รหัสไปรษณีย์ <input  type="text" name="fname" id="fname" required> โทรศัพท์ <input type="text" name="fname" id="fname" required> 
+                      </p>
+                      <tp><label for="start">วัน/เดือน/ปีที่กรอก:</label>
+                        <input type="date" id="start" name="trip-start" value="2020-012-21" min="2020-01-01" max="20-12-31"></tp>
+                        <p></p>
+                        <br>
+                        <p> <b>เรื่อง</b> ขอลาพักการศึกษา &nbsp;ในภาคเรียน
+                          <label class="radio"></label>
+                          <input type="radio" name="answer">
+                          1
+                          </label>
+                          <label class="radio">
+                            <input type="radio" name="answer">
+                            2
+                          </label>
+                          <input type="number" placeholder="ปีการศึกษา" maxlength="4" > 
+                        </p>
+                     
+                        <p><b>เรียน</b> คณะบดีคณะ
+                    
+                          <select>
+                            <option value="---เลือกคณะ---">---เลือกคณะ---</option>
+                            <option value="คณะผลิตกรรมการเกษตร">คณะผลิตกรรมการเกษตร</option>
+                            <option value="คณะสัตวศาสตร์และเทคโนโลยี">คณะสัตวศาสตร์และเทคโนโลยี</option>
+                            <option value="คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม">คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม</option>
+                            <option value="คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+                            <option value="คณะบริหารธุรกิจ">คณะบริหารธุรกิจ</option>
+                            <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+                            <option value="คณะสารสนเทศและการสื่อสาร">คณะสารสนเทศและการสื่อสาร</option>
+                            <option value="คณะวิศวกรรมและอุตสาหกรรมเกษตร">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+                            <option value="คณะวิทยาศาสตร์">คณะวิทยาศาสตร์</option>
+                            <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+                            <option value="คณะพัฒนาการท่องเที่ยว">คณะพัฒนาการท่องเที่ยว</option>
+                            <option value="วิทยาลัยบริหารศาสตร์">วิทยาลัยบริหารศาสตร์</option>
+                            <option value="วิทยาลัยพลังงานทดแทน">พลังงานทดแทน</option>
+                            <option value="แม่โจ้-แพร่ เฉลิมพระเกียรติ">แม่โจ้-แพร่ เฉลิมพระเกียรติ </option>
+                            <option value="แม่โจ้-ชุมพร">แม่โจ้-ชุมพร</option>
+                          </select>
+                  
+                          </p>
+                          <p> ตามที่ <label class="radio"></label>
+                            <input type="radio" name="answer">
+                            นาย
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="answer">
+                              นาง
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="answer">
+                              นางสาว
+                            </label>
+                            ชื่อ-นามสกุล
+                           <input placeholder="ชื่อ" type="text" name="fname" id="fname" onKeyUp="if(!(isNaN(this.value))){ alert('เขียนตัวเลขไม่ได้'); this.value='';}" pattern="[A-Za-z]{1,50}" required>
+                        
+                          <p>
+                            รหัสนักศึกษา (10หลัก) <input type="text" maxlength="10" name="text_plain"
+                              onKeyUp="if(isNaN(this.value)){ alert('ปีการศึกษาพ่อมึงเขียนตัวอักษรได้'); this.value='';}" />
+                            โทรศัพท์มือถือ (10หลัก) <input type="text" maxlength="10" name="text_plain"
+                              onKeyUp="if(isNaN(this.value)){ alert('ปีการศึกษาพ่อมึงเขียนตัวอักษรได้'); this.value='';}" /> </p>
+                          </p>
+                          <p>
+                            โปรดระบุระดับการศึกษา หลักสูตรปริญญาตรี <label class="radio"></label>
+                            <input type="radio" name="answer">
+                            4 – 5 ปี
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="answer">
+                              4 ปีเทียบเข้าเรียน (2ปี)
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="answer">
+                              ภาคปกติ
+                            </label>
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="answer">
+                              ภาคสมทบ
+                            </label>
+                             <p> คณะ 
+                              <select>
+                                <option value="---เลือกคณะ---">---เลือกคณะ---</option>
+                                <option value="คณะผลิตกรรมการเกษตร">คณะผลิตกรรมการเกษตร</option>
+                                <option value="คณะสัตวศาสตร์และเทคโนโลยี">คณะสัตวศาสตร์และเทคโนโลยี</option>
+                                <option value="คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม">คณะสถาปัตยกรรมและการออกแบบสิ่งแวดล้อม</option>
+                                <option value="คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+                                <option value="คณะบริหารธุรกิจ">คณะบริหารธุรกิจ</option>
+                                <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+                                <option value="คณะสารสนเทศและการสื่อสาร">คณะสารสนเทศและการสื่อสาร</option>
+                                <option value="คณะวิศวกรรมและอุตสาหกรรมเกษตร">คณะวิศวกรรมและอุตสาหกรรมเกษตร</option>
+                                <option value="คณะวิทยาศาสตร์">คณะวิทยาศาสตร์</option>
+                                <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+                                <option value="คณะพัฒนาการท่องเที่ยว">คณะพัฒนาการท่องเที่ยว</option>
+                                <option value="วิทยาลัยบริหารศาสตร์">วิทยาลัยบริหารศาสตร์</option>
+                                <option value="วิทยาลัยพลังงานทดแทน">พลังงานทดแทน</option>
+                                <option value="แม่โจ้-แพร่ เฉลิมพระเกียรติ">แม่โจ้-แพร่ เฉลิมพระเกียรติ </option>
+                                <option value="แม่โจ้-ชุมพร">แม่โจ้-ชุมพร</option>
+                              </select>
+                  
+                              สาขา
+                              <input type="text"/> 
+                             </p>
+                            
+                          </p>
+                          <p> ซึ่งเป็นนักศึกษาในความปกครองของข้าพเจ้ามีความประสงค์จะขอลาพักการศึกษา &nbsp;ในภาคเรียน
+                            <label class="radio"></label>
+                            <input type="radio" name="answer">
+                            1
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="answer">
+                              2
+                            </label>
+                            <input type="number" placeholder="ปีการศึกษา" maxlength="4" > 
+                          </p>
+                         <p>เนื่องจาก <input  type="text" name="fname" id="fname" required></p> 
+                          <p> ข้าพเจ้า <label class="radio"></label>
+                            <input type="radio" name="answer">
+                            นาย
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="answer">
+                              นาง
+                            </label>
+                            <label class="radio">
+                              <input type="radio" name="answer">
+                              นางสาว
+                            </label>
+                            ชื่อ-นามสกุล
+                           <input placeholder="ชื่อ" type="text" name="fname" id="fname" onKeyUp="if(!(isNaN(this.value))){ alert('เขียนตัวเลขไม่ได้'); this.value='';}" pattern="[A-Za-z]{1,50}" required>
+                          <p>
+                          <p>ผู้ปกครองของนักศึกษาดังกล่าวข้างต้น ได้รับทราบการขอลาพักการศึกษาแล้ว และยินดีให้ปฏิบัติตามความประสงค์ของนักศึกษา
+                            <br>จึงเรียนมาเพื่อโปรดทราบ</p>
+                            <p>ขอแสดงความนับถือ <input placeholder="ลงชื่อ" type="text" name="fname3" id="fname3" onKeyUp="if(!(isNaN(this.value))){ alert('เขียนตัวเลขไม่ได้'); this.value='';}" required><br>(ผู้ปกครองนักศึกษา)
+                              </p>
+                          <p>ขั้นตอนการเสนอคําร้องลาพักการศึกษา<br>
+                            1. นักศึกษากรอกคําร้องขอลาพักการศึกษา<br>
+                            2. เสนอคําร้องต่อหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ<br>
+                            3. เสนอคําร้องต่อผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ (ชั้น 3 อาคารอํานวย ยศสุข)<br>
+                            4. เสนอคําร้องต่ออาจารย2ที่ปรึกษา (คณะที่นักศึกษาสังกัด)<br>
+                            5. เสนอคําร้องต่อประธานคณะกรรมการประจําหลักสูตร (คณะที่นักศึกษาสังกัด)<br>
+                            6. เสนอคําร้องต่อคณบดี เพื่ออนุมัติ (คณะที่นักศึกษาสังกัด)<br>
+                            7. นําคําร้องไปชําระเงิน (กองคลัง ชั้น 2 อาคารอิงคศรีกสิการ)<br>
+                            8. นําคําร้องขอลาพักการศึกษา ที่ชําระเงินแล้ว (ยื่นต่อกลุ่มภารกิจทะเบียนเรียนฯ) <br>
+                            เพื่อบันทึกฐานข้อมูลนักศึกษาต่อไป<br>
+                            9. เจ้าหน้าที่ทะเบียนฯ บันทึกลงฐานข้อมูล นักศึกษาสามารถตรวจสอบได้ในวันต่อไป </p>
+            </form>
+            
+            </p>
+          </div>
+          </p>
+        </div>
+      </section>
+    </div>
+</body>
+
+</html>
